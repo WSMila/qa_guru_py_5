@@ -10,5 +10,5 @@ def broser_managment():
     browser.config.driver_options = chrome_options
     browser.config.window_width = 1400
     browser.config.window_height = 1200
-    browser.config.base_url = 'https://todomvc.com/examples/emberjs'
-    browser.config.timeout = 2.0
+    browser.config.base_url = 'https://demoqa.com'
+    # browser.config.timeout = 2.0
