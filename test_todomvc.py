@@ -1,7 +1,13 @@
 from time import time
-from selene import browser, have, be
+from selene import browser, have, be, command
 
 def test_complete_todo():
+
+    browser.driver.execute_script(
+        'document.qerySelector("#footer").remove'
+    )
+    browser.element('#footer').execute_script('element.remove()')
+    browser.element('#footer').perform(command)
 
     browser.open('/')
     '''
