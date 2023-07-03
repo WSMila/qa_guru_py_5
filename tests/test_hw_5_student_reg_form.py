@@ -2,8 +2,8 @@ from selene import browser, have, by, be
 
 
 def test_student_reg_form():
-    browser.driver.execute_script('document.querySelector("#footer").remove()')
-    browser.open('/automation-practice-form')
+    browser.open_url('/automation-practice-form')
+    # browser.driver.execute_script('document.querySelector("#footer").remove()')
     # browser.execute_script('document.body.style.zoom="90%"')
     browser.element('.practice-form-wrapper').should(
         have.text('Student Registration Form')
